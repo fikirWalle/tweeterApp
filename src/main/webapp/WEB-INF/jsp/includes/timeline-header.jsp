@@ -1,0 +1,28 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<jsp:include page="/WEB-INF/jsp/includes/global-header.jsp"></jsp:include>
+<body>
+
+<div class="container">
+    <div class="row" >
+        <div class="col-2 c-aside-left">
+            <a class="waves-effect">
+                <img src="images/logo.png" class="img-fluid" alt="">
+            </a>
+
+            <div class="list-group list-group-flush mt-5">
+                <a href="timeline" class="list-group-item waves-effect">
+                    <i class="fas fa-home mr-3"></i><spring:message code="timeline.home"/>
+                </a>
+                <a href="follow" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-reply mr-3"></i><spring:message code="timeline.Followers"/></a>
+                <a href="follow" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-share mr-3"></i><spring:message code="timeline.Following"/></a>
+                <a href="profile" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-user mr-3"></i><spring:message code="timeline.profile"/></a>
+                <a href="index" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fas fa-sign-out-alt mr-3"></i><spring:message code="timeline.Logout"/></a>
+            </div>
+            <br/>
+            <%--            <button class="btn btn-lg btn-block btnSign" mat-raised-button (click)="openDialog()">peep</button>--%>
+
+        </div>
